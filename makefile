@@ -10,4 +10,4 @@ run:
 
 .PHONY: tests
 tests:
-	. env/bin/activate; pytest -vv tests
+	. env/bin/activate; pytest -v tests
