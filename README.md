@@ -12,4 +12,7 @@ In other words, why do we have to do that in one line and separate the commands 
 As it is, both the env and tests jobs run differently in that only one runs if the directory exists. This is as intended and all is well. What do you think about the job run? What would happen if you accidentaly had a file called run in your directory? What can we do to fix this? 
 I think the run would error out, but I would need to do some more experimenting to be certain. We can add an if run exist conditional to prevent running when without the presence of run. 
 
-The code provided to you for the test file starts with two lines, seemingly to append something to sys.path. What is the purpose of these lines?
+The code provided to you for the test file starts with two lines, seemingly to append something to sys.path. What is the purpose of these lines? Import sys imports the sys module to enable accessing premade functions for accessing system features. sys.path.append(".") adds the directory where your Python script is located to the list of directories that Python searches resulting in modifying the search path. 
+
+# Extra Credit 
+
